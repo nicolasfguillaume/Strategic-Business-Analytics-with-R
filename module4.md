@@ -234,6 +234,7 @@ ggplot(data=predattrition, aes(x=probaToLeave,y=performance)) +
 ```
 
 ![](module4_files/figure-html/unnamed-chunk-13-1.png)
+
 Employees that should be retained are those with high performance and high likelyhood to leave. Actions should be targeted towards this people.
 
 We can define a priority score ('priority'), as performance x probability to leave:
@@ -271,8 +272,9 @@ head(orderpredattrition)
 ```
 This allows to focus HR efforts for employee retention.
 
-### Question 1
-What is the ID of the employee that is the less likely to leave according to the estimated model?
+### Questions
+
+1/ What is the ID of the employee that is the less likely to leave according to the estimated model?
 
 
 ```r
@@ -290,8 +292,7 @@ head( predattrition[order(predattrition$probaToLeave),] )
 ```
 According to the model, employee #572 is the less likely to leave.
 
-### Question 2
-What is the ID of the employee that is the less likely to leave according to the estimated model and who has a performance larger than 0.90?
+2/ What is the ID of the employee that is the less likely to leave according to the estimated model and who has a performance larger than 0.90?
 
 
 ```r
