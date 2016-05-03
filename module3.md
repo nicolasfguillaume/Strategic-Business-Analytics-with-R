@@ -201,7 +201,6 @@ As expected, the higher the income, the higher the rating.
 
 
 ***
-***
 
 
 ## Example #2 - HR analytics 2
@@ -591,7 +590,7 @@ ggplot(data=aggbSatisRank, aes(x=rankSatis,y=left)) +
 #        main= "Satisfaction and Employee Attrition", 
 #        ylab="Average Attrition Rate", xlab= "Rank of Satisfaction")
 ```
-Rank 19-20: the happy people who wants to stay.
-Rank 15 to 18: the 'it's ok' people who are staying
-Rank 10 to 14: the happy people who wants to leave -> this is something we want to investigate further. Maybe they are burned out? Or hired by clients? These are the people you want to target when undertaking retaining actions.
+Rank 19-20: the happy people who wants to stay.  
+Rank 15 to 18: the 'it's ok' people who are staying.    
+Rank 10 to 14: the happy people who wants to leave -> this is something we want to investigate further. Maybe they are burned out? Or hired by clients? These are the people you want to target when undertaking retaining actions.  
 Rank 1 to 9: the unhappy people that indeed want to leave.
