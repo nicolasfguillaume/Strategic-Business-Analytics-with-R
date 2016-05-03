@@ -145,7 +145,6 @@ With k=2 clusters, the segments "Crickets" and "Wild Bulls" are merged.
 
 
 ***
-***
 
 
 ## Example #2 - HR analytics: multi-dimensional analysis
