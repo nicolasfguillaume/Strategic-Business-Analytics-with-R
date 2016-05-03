@@ -5,7 +5,6 @@ April 25, 2016
 ### Loading the data
 
 ```r
-setwd('C:/Users/Nicolas/Desktop/Projets Tech/MOOCS/Business Analytics/Module 1/')
 data <- read.csv(file = 'PASTAPURCHASE.csv')
 ```
 
