@@ -396,7 +396,6 @@ The median of Satisfation per segment is 0.41 for segment #1 and 0.64 for segmen
 
 
 ***
-***
 
 
 ## Example #3 - Telecommunication company: example of customer segmentation
@@ -571,6 +570,8 @@ To export our results, we can execute the following code
 ```
 
 ### Bar chart
+
+First, we need to reshape data from wide to long format:
 
 ```r
 library(tidyr)
