@@ -10,7 +10,6 @@ The objective here is to explore the dataset to identify different groups of pro
 
 ```r
 rm(list=ls(all=TRUE))    # clean up the memory of your current R session
-setwd('C:/Users/Nicolas/Desktop/Projets Tech/MOOCS/Business Analytics/Module 2/')
 data <- read.csv(file = 'DATA_2.01_SKU.csv')
 ```
 
