@@ -1,4 +1,4 @@
-# Module 1 - Quizz
+# Module 1 - Introduction to Strategic Business Analytics
 Nicolas  
 April 25, 2016  
 
