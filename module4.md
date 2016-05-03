@@ -114,6 +114,7 @@ plot(datanew$Rating,predcreditscore) # Plot the fitted values vs. the actual one
 ```
 
 ![](module4_files/figure-html/unnamed-chunk-6-1.png)
+
 The correlation coefficient is 0.988. The model does a good job on predicting new values.
 
 ***
@@ -125,7 +126,6 @@ The correlation coefficient is 0.988. The model does a good job on predicting ne
 
 ```r
 rm(list=ls(all=TRUE))
-setwd('C:/Users/Nicolas/Desktop/Projets Tech/MOOCS/Business Analytics/Module 4/')
 dataold <- read.csv('DATA_3.02_HR2.csv')      # training dataset
 datanew <- read.csv('DATA_4.02_HR3.csv')      # test dataset
 ```
