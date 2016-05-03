@@ -34,26 +34,7 @@ The mean is 1.84 (qty/time unit/household) and the standard deviation is 1.02 (q
 
 ```r
 library(dplyr)
-```
 
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 by_income <- data %>% group_by(INCOME) %>% 
                 summarize( 
                             area = mean(AREA)
@@ -180,10 +161,6 @@ The correlation between the purchases of pasta and the exposures is 0.32 (positi
 by_household <- data %>% group_by(HHID) %>% summarize( total_qty = sum(PASTA) )
 
 ggplot(data=by_household, aes(x=total_qty)) + geom_histogram(color = 'black', fill = "tomato")
-```
-
-```
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
 ![](module1_files/figure-html/unnamed-chunk-8-1.png)
