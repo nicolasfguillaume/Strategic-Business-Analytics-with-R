@@ -228,26 +228,7 @@ Then computes the average value of each variable for each cluster:
 
 ```r
 library(dplyr)
-```
 
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 aggdata <- data %>% group_by(groups) %>% summarise_each(funs(mean))
 
 aggdata
@@ -372,7 +353,7 @@ To export our results, we can run the following code
 
 ### Questions
 
-1. Plot of the last project evaluation as a function of the number of projects done:
+1/ Plot of the last project evaluation as a function of the number of projects done:
 
 ```r
 ggplot(data=data, aes(x=NP,y=LPE)) + 
@@ -383,7 +364,7 @@ ggplot(data=data, aes(x=NP,y=LPE)) +
 
 ![](module2_files/figure-html/unnamed-chunk-25-1.png)
 
-2. If you cluster the HR dataset on Satisfaction, Project Evaluation and Number of Projects Done and that you keep 2 segments using the same values for the other specifications (scaling, distance type and clustering algorithm), what's the resulting median Satisfaction per segment?
+2/ If you cluster the HR dataset on Satisfaction, Project Evaluation and Number of Projects Done and that you keep 2 segments using the same values for the other specifications (scaling, distance type and clustering algorithm), what's the resulting median Satisfaction per segment?
 
 ```r
 testdata <- data[,1:3]   # keeping only Satisfaction, Project Evaluation and Number of Projects
