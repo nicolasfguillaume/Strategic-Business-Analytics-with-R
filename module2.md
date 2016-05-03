@@ -140,6 +140,7 @@ ggplot(data=data, aes(x=CV,y=ADS, color=groupID)) +
 ```
 
 ![](module2_files/figure-html/unnamed-chunk-10-1.png)
+
 With k=2 clusters, the segments "Crickets" and "Wild Bulls" are merged.
 
 
