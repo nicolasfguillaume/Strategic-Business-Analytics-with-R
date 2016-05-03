@@ -8,7 +8,6 @@ April 27, 2016
 
 ```r
 rm(list=ls(all=TRUE))
-setwd('C:/Users/Nicolas/Desktop/Projets Tech/MOOCS/Business Analytics/Module 3/')
 data <- read.csv('DATA_3.01_CREDIT.csv')
 ```
 
