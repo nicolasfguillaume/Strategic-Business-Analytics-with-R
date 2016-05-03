@@ -411,10 +411,6 @@ As seen in the lecture, we need to create a survival regression model:
 library(survival) # Load the survival package
 ```
 
-```
-## Warning: package 'survival' was built under R version 3.2.5
-```
-
 ```r
 dependantvars <- Surv(data$lifetime, data$broken) # choose the dependant variables to be used in the survival regression model with the Surv() function
 survreg <- survreg(dependantvars ~ pressureInd + moistureInd + temperatureInd + team + provider, dist="gaussian",data=data) # Create the survival regression model
@@ -497,8 +493,9 @@ head(ActionsPriority)
 ## 414 81.97309       81      0   0.9730926
 ```
 
-### Question 1
-If instead of considering the effects significant when the p-value is smaller than 0.05 (as during the videos), we set the threshold of significance to 0.01, which one of the following is correct?
+### Questions
+
+1/ If instead of considering the effects significant when the p-value is smaller than 0.05 (as during the videos), we set the threshold of significance to 0.01, which one of the following is correct?
 
 ```r
 summary(survreg) 
@@ -531,8 +528,7 @@ summary(survreg)
 ```
 Pressure and Moisture are non-significant. Temperature is significant.
 
-### Question 2
-If you use as explanatory variables only the Pressure, Moisture and Temperature indices (hence removing the teams and providers information), which one of the following is correct?
+2/ If you use as explanatory variables only the Pressure, Moisture and Temperature indices (hence removing the teams and providers information), which one of the following is correct?
 
 ```r
 survreg2 <- survreg(dependantvars ~ pressureInd + moistureInd + temperatureInd, dist="gaussian",data=data)
@@ -561,8 +557,7 @@ summary(survreg2)
 ```
 For this model, Pressure, Moisture and Temperature indexes are greater than 0.05. Hence they are not statistically significant.
 
-### Question 3
-What is the ID of the element that has the largest expected remaining lifetime?
+3/ What is the ID of the element that has the largest expected remaining lifetime?
 
 ```r
 head( Forecast[order(-Forecast$RemainingLT),] )
@@ -614,8 +609,7 @@ summary(data$sales)
 ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##   36.85   82.88  163.00  216.70  221.30 1069.00
 ```
-There is about 10 years of monthly sales data.
-On average, 216 units were sold monthly.
+There is about 10 years of monthly sales data. On average, 216 units were sold monthly.
 
 
 ```r
@@ -668,7 +662,7 @@ summary(regres)
 ```
 Looking at the p-values, we can tell that most of the months are statistically significant (except for march, may, may, oct). Also, looking at the t-values, we can tell that november and december have the strongest positive effect on the sales.
 
-### Boxplots
+### Boxplots of the monthly sales
 
 Let's see the sale distribution for each month:
 
