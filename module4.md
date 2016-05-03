@@ -621,6 +621,7 @@ ggplot(data=data, aes(x=time,y=sales)) +
 ```
 
 ![](module4_files/figure-html/unnamed-chunk-30-1.png)
+
 We see that the data shows seasonality.
 
 In order to better understand what drives the sales, then let's start by creating a linear regression model of the sales (dependent variable) as a function of the month of the year (independant variable):
@@ -662,7 +663,7 @@ summary(regres)
 ```
 Looking at the p-values, we can tell that most of the months are statistically significant (except for march, may, may, oct). Also, looking at the t-values, we can tell that november and december have the strongest positive effect on the sales.
 
-### Boxplots of the monthly sales
+### Boxplots of monthly sales
 
 Let's see the sale distribution for each month:
 
@@ -676,6 +677,7 @@ ggplot(data=data, aes(x=month,y=sales)) +
 ```
 
 ![](module4_files/figure-html/unnamed-chunk-32-1.png)
+
 We observe that, from year to year, the there is much more variation in sales in december than in july.
 
 ### Testing the model on past data
