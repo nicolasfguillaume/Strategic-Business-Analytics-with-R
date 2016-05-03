@@ -105,7 +105,7 @@ ggplot(data=data, aes(x=CV,y=ADS, color=groupID)) +
 
 ### Questions
 
-1. What is the correct mean and median of the coefficient of variations of the sales in the SKU dataset?
+1/ What is the correct mean and median of the coefficient of variations of the sales in the SKU dataset?
 
 ```r
 mean(data$CV)
@@ -124,7 +124,7 @@ median(data$CV)
 ```
 The mean is 0.396 and the median is 0.4.
 
-2. Do a hierarchical clustering on scaled data using an Euclidian distance and Ward.D clustering on the SKU dataset (DATA_2.01_SKU.csv). What are the resulting segments compared to what is shown in class if you decide to take only 2 clusters?
+2/ Do a hierarchical clustering on scaled data using an Euclidian distance and Ward.D clustering on the SKU dataset (DATA_2.01_SKU.csv). What are the resulting segments compared to what is shown in class if you decide to take only 2 clusters?
 
 ```r
 data$groupID <- cutree(fit,k=2) 
